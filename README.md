@@ -36,7 +36,8 @@ will add a screenshot later for sure
 
 ### Links
 
-will add links later when publishing the work
+git repo at [Github](https://github.com/amine-boukhris/tech-landing-page)
+live site at [Vercel](https://tech-landing-page.vercel.app/)
 
 ## My process
 

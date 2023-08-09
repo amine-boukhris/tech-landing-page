@@ -5,26 +5,100 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Techy</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon.png">
+
   <link rel="stylesheet" href="./styles/modern-normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/utils.css">
 
+  <link rel="stylesheet" href="./styles/components/header.css">
+  <link rel="stylesheet" href="./styles/components/hero.css">
+  <link rel="stylesheet" href="./styles/components/categories.css">
+  <link rel="stylesheet" href="./styles/components/featured.css">
+  <link rel="stylesheet" href="./styles/components/explore.css">
+  <link rel="stylesheet" href="./styles/components/footer.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <header class="header container">header</header>
+  <header class="header container">
+    <div class="header__settings">
+      <div class="header__settings-region">
+        <select name="language" id="language">
+          <option value="rigatoni">English</option>
+        </select>
+        <select name="country" id="country">
+          <option value="rigatoni">Tunisia</option>
+        </select>
+      </div>
+      <div class="header__settings-authentication">
+        <a href="./signup.html">sign up</a>
+        <a href="./login.html">log in</a>
+      </div>
+    </div>
+    <div class="header__bar">
+      <div class="header__bar-brand">
+        <img src="./assets/icon.png" alt="website logo">
+        <h1>Techy</h1>
+      </div>
+      <div class="header__bar-navigation">
+        <nav>
+          <ul>
+            <li><a href="#header" class="active">home</a></li>
+            <li><a href="#hero">hero</a></li>
+            <li><a href="#categories">categories</a></li>
+            <li><a href="#featured">featured</a></li>
+            <li><a href="#explore">explore</a></li>
+            <li><a href="#footer">about</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__bar-functionalities">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping header__bar-functionalities-cart"></i>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-bars">
+          <div>
+            <nav>
+              <ul>
+                <li><a href="#categories">categories</a></li>
+                <li><a href="#featured">featured</a></li>
+                <li><a href="#explore">explore</a></li>
+                <li><a href="#footer">about</a></li>
+              </ul>
+            </nav>
+          </div>
+        </i>
+      </div>
+    </div>
+    <div class="header__search none">
+      <input type="text" placeholder="Search for item">
+      <button>
+        <i class="fa-solid fa-search"></i>
+      </button>
+    </div>
+  </header>
   <main>
-    <section class="hero container">hero</section>
-    <section class="categories container">categories</section>
-    <section class="featured container">featured</section>
-    <section class="explore container">explore</section>
+    <section class="hero container" id="hero">hero</section>
+    <section class="categories container" id="categories">categories</section>
+    <section class="featured container" id="featured">featured</section>
+    <section class="explore container" id="explore">explore</section>
   </main>
-  <footer class="footer container">footer</footer>
+  <footer class="footer container" id="footer">footer</footer>
+
+
+  <script src="./src/header.js"></script>
+  <script src="./src/signup.js"></script>
+  <script src="./src/login.js"></script>
 </body>
 
 </html>
