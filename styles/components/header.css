@@ -9,7 +9,7 @@
   justify-content: space-between;
   padding: 0.4rem 1rem;
 
-  background-color: var(--clr-light);
+  background-color: var(--clr-off-white);
 }
 
 .header__settings-region select {
@@ -30,7 +30,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  border: 1px solid var(--clr-light);
+  border: 1px solid var(--clr-off-white);
   border-top: none;
   padding: 1rem 1.8rem;
   border-radius: 0 0 var(--radius) var(--radius);
