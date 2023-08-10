@@ -1,0 +1,100 @@
+.categories__subtitle {
+  text-align: center;
+  color: var(--clr-rose);
+  font-size: var(--size-base);
+}
+
+.categories__title {
+  text-align: center;
+  font-size: var(--size-3xl);
+  margin-top: var(--size-xxs);
+  margin-bottom: var(--size-3xl);
+}
+
+.categories__cards {
+  display: none;
+  /* grid-template-columns: repeat(6, 1fr); */
+  /* justify-content: center; */
+  gap: 10px;
+  /* overflow: scroll; */
+  padding-bottom: 2rem;
+}
+
+.categories__card {
+  cursor: pointer;
+  padding: 8px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  aspect-ratio: 1;
+  /* height: 150px; */
+  flex: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;  border-radius: 8px;
+  transition: all .2s;
+}
+
+.categories__card:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+  border: 1px solid var(--clr-slate400);
+}
+
+.categories__card-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories__card span {
+  margin-top: auto;
+}
+
+.categories__cards-mobile {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.categories__cards-mobile-button {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--clr-blue);
+  color: white;
+  border-radius: 999px;
+  font-size: var(--size-sm);
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+  .categories__cards-mobile {
+    display: none;
+  }
+
+  .categories__cards {
+    display: flex;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .categories__title {
+    font-size: var(--size-5xl);
+  }
+  .categories__subtitle {
+    font-size: var(--size-lg);
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
