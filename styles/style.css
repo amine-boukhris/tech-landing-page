@@ -1,7 +1,8 @@
 :root {
   --clr-dark: #070a13;
   --clr-light: #f1f5f9;
-  --clr-off-white: #f5f5f5;
+  /* --clr-off-white: #f5f5f5; */
+  --clr-off-white: #FAF9F6;
   --clr-slate50: #f8fafc;
   --clr-slate200: #e2e8f0;
   --clr-slate400: #94a3b8;
