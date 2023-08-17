@@ -48,11 +48,18 @@
 
 .featured__img img {
   z-index: 0;
+  transition: all .2s;
+}
+
+.featured__img img:hover {
+  scale: 1.015;
+  translate: 0 -10px;
+  rotate: -20deg;
 }
 
 .featured__cta-button {
   background-color: var(--clr-blue);
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   color: white;
   border-radius: 6px;
   /* align-self: baseline; */

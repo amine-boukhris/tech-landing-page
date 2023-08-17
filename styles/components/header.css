@@ -1,15 +1,16 @@
 .header {
   margin-top: 0;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   --radius: 1rem;
 }
 
+/* won't show for now */
 .header__settings {
   display: flex;
   justify-content: space-between;
   padding: 0.4rem 1rem;
-
-  background-color: var(--clr-off-white);
+  display: none;
+  background-color: white;
 }
 
 .header__settings-region select {
